@@ -1,2 +1,0 @@
-/usr/bin/ar qc libinternal.a CMakeFiles/internal.dir/system_properties.c.o CMakeFiles/internal.dir/atomics.c.o CMakeFiles/internal.dir/ashmem.c.o
-/usr/bin/ranlib libinternal.a

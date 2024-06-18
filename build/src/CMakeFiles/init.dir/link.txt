@@ -1,1 +1,0 @@
-/usr/bin/cc -O2 -g -DNDEBUG CMakeFiles/init.dir/bootchart.c.o CMakeFiles/init.dir/builtins.c.o CMakeFiles/init.dir/devices.c.o CMakeFiles/init.dir/init.c.o CMakeFiles/init.dir/logo.c.o CMakeFiles/init.dir/parser.c.o CMakeFiles/init.dir/property_service.c.o CMakeFiles/init.dir/util.c.o -o init  -lbsd ../internal/libinternal.a 

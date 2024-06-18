@@ -1,8 +1,0 @@
-/home/zerocool32/projects/android-init/build/CMakeFiles/edit_cache.dir
-/home/zerocool32/projects/android-init/build/CMakeFiles/rebuild_cache.dir
-/home/zerocool32/projects/android-init/build/internal/CMakeFiles/internal.dir
-/home/zerocool32/projects/android-init/build/internal/CMakeFiles/edit_cache.dir
-/home/zerocool32/projects/android-init/build/internal/CMakeFiles/rebuild_cache.dir
-/home/zerocool32/projects/android-init/build/src/CMakeFiles/init.dir
-/home/zerocool32/projects/android-init/build/src/CMakeFiles/edit_cache.dir
-/home/zerocool32/projects/android-init/build/src/CMakeFiles/rebuild_cache.dir
