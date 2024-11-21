@@ -21,6 +21,7 @@
 #include <sys/mman.h>
 #include <sys/stat.h>
 #include <sys/types.h>
+#include <sys/ioctl.h>
 
 #include <linux/fb.h>
 #include <linux/kd.h>
@@ -95,7 +96,7 @@ static int vt_set_mode(int graphics)
     fd = open("/dev/tty0", O_RDWR | O_SYNC);
     if (fd < 0)
         return -1;
-    r = ioctl(fd, KDSETMODE, (void*) (graphics ? KD_GRAPHICS : KD_TEXT));
+    r = ioctl(fd, KDSETMODE, graphics ? KD_GRAPHICS : KD_TEXT);
     close(fd);
     return r;
 }

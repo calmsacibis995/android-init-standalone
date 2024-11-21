@@ -868,7 +868,7 @@ int main(int argc, char **argv)
     property_init();
     
     // only listen for keychords if ro.debuggable is true
-    debuggable = property_get("ro.debuggable");
+    debuggable = (char *)property_get("ro.debuggable");
     if (debuggable && !strcmp(debuggable, "1")) {
         keychord_fd = open_keychord();
     }

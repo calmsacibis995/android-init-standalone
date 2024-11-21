@@ -299,7 +299,7 @@ int property_set(const char *name, const char *value)
         memcpy(pi->value, value, valuelen + 1);
 
         pa->toc[pa->count] =
-            (namelen << 24) | (((unsigned) pi) - ((unsigned) pa));
+            (namelen << 24) | (((uintptr_t) pi) - ((uintptr_t) pa));
 
         pa->count++;
         pa->serial++;
@@ -368,8 +368,7 @@ void handle_property_set_fd(int fd)
     r = recv(s, &msg, sizeof(msg), 0);
     close(s);
     if(r != sizeof(prop_msg)) {
-        ERROR("sys_prop: mis-match msg size recieved: %d expected: %d\n",
-              r, sizeof(prop_msg));
+        ERROR("sys_prop: mis-match msg size recieved: %d expected: %ld\n", r, sizeof(prop_msg));
         return;
     }
 
