@@ -17,6 +17,7 @@ or options before the first section are ignored.
 
 Actions and Services have unique names.  If a second Action or Service
 is declared with the same name as an existing one, it is ignored as
+an error.  (??? should we override instead)
 
 ## Actions
 Actions are named sequences of commands.  Actions have a trigger which

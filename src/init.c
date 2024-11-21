@@ -29,6 +29,7 @@
 #include <time.h>
 #include <errno.h>
 #include <stdarg.h>
+#include <grp.h>
 #include <mtd/mtd-user.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -56,6 +57,8 @@
 #include "init.h"
 #include "property_service.h"
 #include "bootchart.h"
+
+extern int reboot(int magic, int magic2, int cmd, void *arg);
 
 #define __reboot reboot
 
